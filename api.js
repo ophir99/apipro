@@ -20,7 +20,9 @@ mongoose
 
 app.use(express.json());
 app.use(cors());
-
+app.get("/cool", (req, res) => {
+  res.send({ msg: "wow" });
+});
 app.use("/user", userRoutes);
 
 app.listen(3000, () => {
