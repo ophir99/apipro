@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/profile", proilecontroller.updateProfile);
 
-router.get("/linkedin", usercontroller.linkedin);
+router.post("/linkedin", usercontroller.linkedin);
 
 router.post("/create", usercontroller.create);
 
